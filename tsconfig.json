@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ESNext",
+    "module": "ESNext",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "outDir": "dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    "public/**"
+  ]
+}
