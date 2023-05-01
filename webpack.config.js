@@ -33,23 +33,22 @@ export default {
       {
         test: /\.(ts|tsx)$/,
         exclude: /(node_modules)/,
-        use: { loader: 'ts-loader' },
+        use: [
+          'ts-loader'
+        ],
       },
       {
         test: /\.css$/,
         use: [
           'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-            },
-          },
+          'css-loader'
         ],
       },
       {
         test: /\.(png|svg|jpg|gif|ico)$/,
-        use: ['file-loader'],
+        use: [
+          'file-loader'
+        ],
       },
     ],
   },
