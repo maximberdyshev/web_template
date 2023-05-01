@@ -4,15 +4,14 @@ import CopyWebpackPlugin from 'copy-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default {
-  entry: {
-    client: './src/index.tsx',
-  },
-
   mode: 'development',
+
+  entry: './src/index.tsx',
 
   output: {
     path: path.resolve('build'),
     filename: 'index.js',
+    assetModuleFilename: '[name].[contenthash][ext]',
   },
 
   resolve: {
@@ -20,10 +19,8 @@ export default {
   },
 
   devServer: {
-    static: './public',
-    compress: true,
     port: 3000,
-    host: "localhost",
+    host: 'localhost',
     historyApiFallback: true,
     hot: true,
   },
@@ -33,29 +30,22 @@ export default {
       {
         test: /\.(ts|tsx)$/,
         exclude: /(node_modules)/,
-        use: [
-          'ts-loader'
-        ],
+        use: ['ts-loader'],
       },
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ],
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|gif|ico)$/,
-        use: [
-          'file-loader'
-        ],
+        test: /\.(png|svg|jpe?g|gif|ico)$/i,
+        type: 'asset/resource',
       },
     ],
   },
 
   plugins: [
-    // new CopyWebpackPlugin({ patterns: [path.resolve('./public/index.html')], }),
     new CleanWebpackPlugin(),
+    // new CopyWebpackPlugin({ patterns: [path.resolve('./src/assets/')], }),
     new HtmlWebpackPlugin({ template: './public/index.html' }),
   ],
 
