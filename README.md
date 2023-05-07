@@ -1,2 +1,3 @@
-Template for WEB-application with:
-TYPESCRIPT + REACT + MOBX + WEBPACK + SASS
+Template WEB-application on:
+
+```TYPESCRIPT + REACT + MOBX + WEBPACK + SASS```
