@@ -1,2 +1,2 @@
 Template for WEB-application with:
-TYPESCRIPT + REACT + MOBX + WEBPACK
+TYPESCRIPT + REACT + MOBX + WEBPACK + SASS
