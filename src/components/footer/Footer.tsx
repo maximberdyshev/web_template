@@ -3,8 +3,8 @@ import AppStore from '../../stores/AppStore'
 
 export const Footer = observer(() => {
   return (
-    <div className='footer'>
+    <footer className='footer'>
       {AppStore.footerText}
-    </div>
+    </footer>
   )
 })

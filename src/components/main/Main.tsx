@@ -3,7 +3,7 @@ import AppStore from '../../stores/AppStore'
 
 export const Main = observer(() => {
   return (
-    <div className='main'>
+    <main className='main'>
       <p>{AppStore.mainText}</p>
       <button
         className='mainBtn'
@@ -11,6 +11,6 @@ export const Main = observer(() => {
       >
         Clear Text !!!
       </button>
-    </div>
+    </main>
   )
 })
