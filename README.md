@@ -1,12 +1,10 @@
-Template WEB-application on:
+Basic template for React application with:
+- TypeScript
+- MobX
+- SASS
+- Webpack
 
-```TYPESCRIPT + REACT + MOBX + WEBPACK + SASS```
-
-
-How to install: 
+How to install and run:
 1. clone repo
 2. npm i
 3. npm run watch
-
-
-u can change branch to see a dummy example.. 

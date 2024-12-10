@@ -1,10 +1,10 @@
 import { observer } from 'mobx-react-lite'
-import TickerStore from '../stores/TickerStore'
+import TimerStore from '../stores/TickerStore'
 
 export const Ticker = observer((): JSX.Element => {
   return (
-    <h4>
-      Ticker: {TickerStore.seconds} sec
-    </h4>
+      <span>
+        Timer: {TimerStore.seconds} sec
+      </span>
   )
 })

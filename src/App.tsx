@@ -1,11 +1,12 @@
-import { Hello, World, Ticker } from './components'
+import { Footer, Header, Main } from './components'
+import './styles/app.scss'
 
 export const App = (): JSX.Element => {
   return (
-    <div>
-      <Hello />
-      <World />
-      <Ticker />
+    <div className='app'>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   )
 }
