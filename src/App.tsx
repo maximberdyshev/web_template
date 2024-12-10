@@ -1,7 +1,11 @@
-export const App = () => {
+import { Hello, World, Ticker } from './components'
+
+export const App = (): JSX.Element => {
   return (
     <div>
-      <h1>Hello world!</h1>
+      <Hello />
+      <World />
+      <Ticker />
     </div>
   )
 }

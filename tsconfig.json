@@ -1,16 +1,23 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "target": "ESNext",
-    "module": "ESNext",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
+    "strict": true,
+    "strictNullChecks": true,
     "noEmitOnError": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "target": "es2019",
+    "moduleResolution": "node10",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "outDir": "./build",
+    "removeComments": true,
+    "noImplicitAny": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/**", "build/**"]
+  "include": [
+    "src/**/*",
+    "webpack.config.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
 }

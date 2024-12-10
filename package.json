@@ -1,12 +1,11 @@
 {
-  "type": "module",
   "name": "web_template",
   "version": "1.0.0",
-  "description": "web template",
+  "description": "basic template for React application",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "watch": "webpack-dev-server"
+    "watch": "webpack serve --config webpack.config.ts --mode development",
+    "dev": "webpack --config webpack.config.ts --mode development",
+    "build": "webpack --config webpack.config.ts --mode production"
   },
   "repository": {
     "type": "git",
@@ -19,29 +18,31 @@
   },
   "homepage": "https://github.com/maximberdyshev/web_template#readme",
   "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "mobx": "^6.13.5",
+    "mobx-react": "^9.1.1",
+    "mobx-react-lite": "^4.0.7"
   },
   "devDependencies": {
-    "mobx": "^6.9.0",
-    "mobx-react": "^7.6.0",
-    "mobx-react-lite": "^3.4.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@types/node": "^20.1.0",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "@types/webpack": "^5.28.1",
-    "@types/webpack-env": "^1.18.0",
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.2",
+    "@types/webpack": "^5.28.5",
+    "@types/webpack-dev-server": "^4.7.1",
+    "@types/webpack-env": "^1.18.5",
     "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^11.0.0",
-    "html-webpack-plugin": "^5.5.1",
-    "typescript": "^5.0.4",
-    "ts-loader": "^9.4.2",
-    "style-loader": "^3.3.2",
-    "css-loader": "^6.7.3",
-    "sass-loader": "^13.2.2",
-    "sass": "^1.62.1",
-    "webpack": "^5.82.0",
-    "webpack-cli": "^5.1.0",
-    "webpack-dev-server": "^4.15.0"
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   }
 }
